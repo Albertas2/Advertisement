@@ -1,0 +1,17 @@
+user:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+
+app:
+    resource: "@AdvertisementBundle/Controller/"
+    type:     annotation
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_registration_confirmed:
+    path: /
